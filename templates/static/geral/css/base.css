@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    background-color: #343541;
+    color: #f9f9f9;
+    font-family: "Euclid Circular A", "Poppins";
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 88px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(27 32 44 / 70%);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    backface-visibility: hidden;
+    transform: translateZ(0px);
+    transition: 0.3s;
+  }
+  
+  nav img {
+    height: 40px;
+  }
+  
+  .burger {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    width: 82px;
+    height: 82px;
+    font-size: 30px;
+    color: #f9f9f9;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .burger i:last-child {
+    display: none;
+  }
+  
+  body.open .burger i:first-child {
+    display: none;
+  }
+  
+  body.open .burger i:last-child {
+    display: block;
+  }
+  
+  .overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(27 32 44 / 70%);
+    visibility: hidden;
+    opacity: 0;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+  }
+  
+  body.open .overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  
+  
+  nav button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  aside {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 100%;
+    padding: 18px 20px 20px;
+    background: #272e3c;
+    box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+    translate: 100% 0;
+    transition: 0.3s;
+  }
+  
+  body.open aside {
+    translate: 0;
+  }
+  
+  aside a {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  
+  aside h3 {
+    margin: 40px 0 10px;
+    color: #989cad;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  aside button {
+    padding: 4px;
+    background: linear-gradient(-60deg, #000000, #03e9f4);
+    color: #f7f7f7;
+    border: 0;
+    height: 60px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  main{
+    margin: 150px;
+  }
+  /*FOOTER*/
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  
+  .footer {
+      display: flex;
+      z-index: 1;
+      color: #fffefe;
+      padding: 2rem 0;
+      height: auto;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: #000000;
+      padding-top:10px;
+  }
+  
+  .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+  }
+  
+  .footer h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+  }
+  
+  .links li {
+      list-style: none;
+      line-height: 30px;
+      text-align: center;
+      font-weight: 100;
+  }
+  
+  .links li a {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .registration {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .registration input {
+
+
+    padding: 10px;
+    font-weight: 100;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+    margin: 1rem 0;
+  }
+  
+  
+  
+  .address {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  
+  .social {
+      display: flex;
+      list-style: none;
+  }
+  
+  .social li {
+      margin: 0 8px;
+      cursor: pointer;
+      font-size: 18px;
+  }
+  
